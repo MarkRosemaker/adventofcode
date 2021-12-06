@@ -11,8 +11,10 @@ var Example = []int{
 	1456,
 }
 
-const ExampleResultOne = 514579
-const ExampleResultTwo = 241861950
+const (
+	ExampleResultOne = 514579
+	ExampleResultTwo = 241861950
+)
 
 var Input = []int{
 	1822,

@@ -7,7 +7,6 @@ import (
 )
 
 func TestFindPair(t *testing.T) {
-
 	first, second, err := findPair(data.Example)
 	if err != nil {
 		t.Fatal(err)
@@ -25,11 +24,9 @@ func TestFindPair(t *testing.T) {
 	if sum := first + second; sum != data.Sum {
 		t.Fatalf("sum doesn't match: %d + %d = %d", first, second, sum)
 	}
-
 }
 
 func TestFindTriplet(t *testing.T) {
-
 	first, second, third, err := findTriplet(data.Example)
 	if err != nil {
 		t.Fatal(err)
@@ -47,11 +44,9 @@ func TestFindTriplet(t *testing.T) {
 	if sum := first + second + third; sum != data.Sum {
 		t.Fatalf("sum doesn't match: %d + %d = %d", first, second, sum)
 	}
-
 }
 
 func TestProblemOne(t *testing.T) {
-
 	res, err := ProblemOne(data.Example)
 	if err != nil {
 		t.Fatal(err)
@@ -63,7 +58,6 @@ func TestProblemOne(t *testing.T) {
 }
 
 func TestProblemTwo(t *testing.T) {
-
 	res, err := ProblemTwo(data.Example)
 	if err != nil {
 		t.Fatal(err)
